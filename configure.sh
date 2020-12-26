@@ -44,6 +44,8 @@ cmake \
     -DCMAKE_C_FLAGS="-fPIC" \
     -DCMAKE_CXX_FLAGS="-fPIC" \
     -DBUILD_SHARED_LIBS=ON \
+    -DBoost_NO_BOOST_CMAKE=ON \
+    -DBoost_NO_SYSTEM_PATHS=ON \
     -DBOOST_ROOT=${REZ_BOOST_ROOT}
 
 echo -e "\n"
